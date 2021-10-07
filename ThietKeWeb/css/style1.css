@@ -1,0 +1,344 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+/*phần header*/
+.logo_login
+{
+	width:1200px;
+	height:120px;
+	margin-left:50px;
+}
+.logo_login li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.logo_login a {
+    transition:all linear 0.15s;
+    color:#919191;
+    text-decoration:none;
+}
+
+.logo_login > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:20px;
+	margin-right:50px;
+}
+.clearfix:after {
+    display:block;
+    clear:both;          
+}
+.wrapper {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+    background:#3e3436;
+}
+ 
+/*----- Phần menu -----*/
+.menu {
+    width:1200px;
+    background:#00;
+    height: 42px;
+    
+}
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+/*----- css cho phần menu cha -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:white;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+/*----css cho menu con----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+/*---phan slide*/
+.slide{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+.chuyen-slide{
+  width: 9999px;
+  transition: all 0.5s;
+}
+.chuyen-slide img{
+  width: 1200px;
+  height: 600px;
+  float:left;
+}
+.dieuhuong{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 48%;
+  padding-left: 110px;
+}
+.dieuhuong i:last-child{
+  position: relative;
+  left: 880px;
+}
+/*phan search*/
+.dn{
+	float:right;
+	margin-right:160px;
+	margin-top:2px;
+}
+.box{
+  width:10px;
+  margin-top:2px;
+  
+}
+.container-1{
+  width: 30px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 200px;
+  height: 35px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 10px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+/*sản phẩm*/
+.content{
+	margin-left:30px;
+}
+#title{
+	margin-bottom: 20px;
+	font-size: 50px;
+	text-align:center;
+	margin-top:5px;
+}
+.sp, .ten, .gia, .mua{
+	width: 285px;
+	margin-left: 20px;
+	float: left;
+}
+.sp:first-child, .ten:first-child, .gia:first-child, .mua:first-child{
+	margin-left: 0;
+}
+.sp{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.sp img{
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	        transform: scale(1.2);
+			height:420px;
+			width:300px;
+}
+.sp img:hover{
+	-webkit-transform: scale(0.9);
+	   -moz-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	     -o-transform: scale(0.9);
+	        transform: scale(0.9);
+}
+.ten p{
+	color: #464444;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.gia{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #818753;
+	margin-bottom: 10px;
+}
+.gia span{
+	font-size: 25px;
+}
+.mua{
+	text-align: center;
+	margin-bottom:30px;
+}
+.layer4{
+	
+}
+.btn{
+	width:180px;
+	height:40px;
+	border-radius:10px;
+	background-color:#000;
+	color:#fff;
+	
+}
+/*footer*/
+.footer{
+	width:100%;
+	background-color:#000000;
+	height:200px;
+	margin-top:650px;
+	color:#fff;
+	
+}
+.about
+{
+	width:30%;
+	float:left
+	
+}
+.contact
+{
+	width:40%;
+	float:left;
+	margin-top:20px;
+	margin-left:100px
+	
+}
+.truycap{
+	width:30%;
+	float:left;
+}
+.phai
+{
+	float:right;
+	margin-top:20px;
+	font-size:20px;
+	line-height:1.5;
+}
+/*
+.about{
+	width: 400px;
+	float: left;
+	height:100px;
+	background-color:#000000;
+	
+}
+.about #trai{
+	width: 70px;
+	height: 38px;
+	margin-top: 15px;
+	float: left;
+}
+.about #phai{
+	font-size: 15px;
+	width: 245px;
+	color: #6C6666;
+	float: left;
+}
+.contact{
+	width: 300px;
+	float: left;
+	height:100px;
+	background-color:#000000;
+}
+.contact p{
+	font-size: 16px;
+	margin-top: 10px;
+	color: #6C6666;
+	
+}
+.contact span{
+	font-size: 20px;
+	font-weight: bold;
+}
+.link{
+	width: 500px;
+	float: left;
+	height:100px;
+	background-color:#000000;
+}
+.link p{
+	font-size: 16px;
+	margin-top: 45px;
+	color: #6C6666;
+}
+*/

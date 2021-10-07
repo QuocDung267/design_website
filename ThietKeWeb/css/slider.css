@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.slide
+{
+	width:1200px;
+	margin:0px auto;
+	overflow:hidden;
+	margin-top:50px;
+	position: relative;
+	
+}
+.chuyen-slide
+{
+	width:9999px;
+	transition: all 0.5s;
+}
+img
+{
+	width:1200px;
+	height:600px;
+	float:left;
+	
+}
+.dieuhuong{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 48%;
+  padding-left: 100px;
+}
+.dieuhuong i:last-child{
+  position: relative;
+  left: 880px;
+}
